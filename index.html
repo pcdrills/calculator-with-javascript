@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
     <title>Js Calculator</title>
 </head>
 <body>
@@ -13,28 +14,28 @@
     <table>
         <tbody>
             <tr>
-                <td><input type="button" value="7" name="btn"></td>
-                <td><input type="button" value="8" name="btn"></td>
-                <td><input type="button" value="9" name="btn"></td>
-                <td><input type="button" value="CE" name="btn"></td>
+                <td><input type="button" value="7" name="btn" onclick="buttonpressed(7)"></td>
+                <td><input type="button" value="8" name="btn" onclick="buttonpressed(8)"></td>
+                <td><input type="button" value="9" name="btn" onclick="buttonpressed(9)"></td>
+                <td><input type="button" value="CE" name="btn" onclick="buttonpressed('ce')"></td>
             </tr>
             <tr>
-                <td><input type="button" value="4" name="btn"></td>
-                <td><input type="button" value="5" name="btn"></td>
-                <td><input type="button" value="6" name="btn"></td>
-                <td><input type="button" value="/" name="btn"></td>
+                <td><input type="button" value="4" name="btn" onclick="buttonpressed(4)"></td>
+                <td><input type="button" value="5" name="btn" onclick="buttonpressed(5)"></td>
+                <td><input type="button" value="6" name="btn" onclick="buttonpressed(6)"></td>
+                <td><input type="button" value="/" name="btn" onclick="buttonpressed('/')"></td>
             </tr>
             <tr>
-                <td><input type="button" value="1" name="btn"></td>
-                <td><input type="button" value="2" name="btn"></td>
-                <td><input type="button" value="3" name="btn"></td>
-                <td><input type="button" value="*" name="btn"></td>
+                <td><input type="button" value="1" name="btn" onclick="buttonpressed(1)"></td>
+                <td><input type="button" value="2" name="btn" onclick="buttonpressed(2)"></td>
+                <td><input type="button" value="3" name="btn" onclick="buttonpressed(3)"></td>
+                <td><input type="button" value="*" name="btn" onclick="buttonpressed('*')"></td>
             </tr>
             <tr>
-                <td><input type="button" value="." name="btn"></td>
-                <td><input type="button" value="0" name="btn"></td>
-                <td><input type="button" value="=" name="btn"></td>
-                <td><input type="button" value="+" name="btn"></td>
+                <td><input type="button" value="." name="btn" onclick="buttonpressed('.')"></td>
+                <td><input type="button" value="0" name="btn" onclick="buttonpressed(0)"></td>
+                <td><input type="button" value="=" name="btn" onclick="buttonpressed('=')"></td>
+                <td><input type="button" value="+" name="btn" onclick="buttonpressed('+')"></td>
             </tr>
         </tbody>
     </table>
