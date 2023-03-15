@@ -10,7 +10,8 @@
 <body>
     <h1> Basic Calculator using JavaScript</h1>
     <!--Let's Design the Calculator layout-->
-    <input type="text" name="display" id="screen" >
+    <input type="text" name="display2" id="screen2" ><button disabled="disabled">Screen2</button> <br/><br/>
+    <input type="text" name="display" id="screen" ><button disabled="disabled">Screen1</button> <br/><br/>
     <table>
         <tbody>
             <tr>
@@ -40,7 +41,7 @@
             <tr>
                 <td><input type="button" value="." name="btn" onclick="buttonpressed('.')"></td>
                 <td><input type="button" value="0" name="btn" onclick="buttonpressed(0)"></td>
-                <td><input type="button" value="=" name="btn" onclick="buttonpressed('=')"></td>
+                <td colspan=2><input type="button" value="=" name="btn" onclick="buttonpressed('=')"></td>
             </tr>
         </tbody>
     </table>
