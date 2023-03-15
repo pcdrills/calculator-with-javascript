@@ -16,6 +16,17 @@ function buttonpressed(value){
             break;
         case 'pm':
             //code to swap between negative and positive values
+            inputval = document.getElementById("screen").value;
+            firstChar = inputval.charAt(0);
+            // console.log(firstChar)
+            if(firstChar != '-' || firstChar >= 0){
+                displayvalue =  '-' + document.getElementById("screen").value;
+            }
+            else{
+                displayvalue =  '+' + document.getElementById("screen").value;
+            }
+            
+            document.getElementById("screen").value = displayvalue;
             break;
         default:
             displayvalue =  document.getElementById("screen").value + value;
@@ -27,6 +38,7 @@ function buttonpressed(value){
     {
         case '=':
             //
+            document.getElementById("screen2").value = displayvalue;
             break;
         case 'ce':
             document.getElementById("screen2").value = 0;
